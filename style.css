@@ -1,0 +1,85 @@
+body {
+  background-color: #f1f1f1;
+  background-image: url( 'blob-scene-haikei.svg' );
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  font-family: 'Raleway', sans-serif;
+}
+
+#board {
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+  border-collapse: collapse;
+  background-color: rgb(172, 140, 211);
+  border-radius: 10px;
+  box-shadow:  4px 4px 7px #6c6c6c, -3px -3px 7px #ffffff;
+}
+
+#board td {
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#board td:hover {
+  background-color: rgb(180, 164, 196);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.borU{
+    border: 1px solid rgb(213, 213, 213);
+    border-top: 0;
+}.borD{
+  border: 1px solid rgb(213, 213, 213);
+  border-bottom: 0;
+}.borL{
+  border: 1px solid rgb(213, 213, 213);
+  border-left: 0;
+}.borR{
+  border: 1px solid rgb(213, 213, 213);
+  border-right: 0;
+}
+
+#restart-button {
+  display: table;
+    margin: 20px auto;
+    padding: 15px 40px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 13px;
+    background: rgb(127, 61, 243);
+    box-shadow:inset 3px 5px 4px #32007d, inset -3px -5px 8px #9a00ff;
+}
+
+#restart-button:hover {
+  background: #9a00ff;
+  box-shadow: inset 3px 5px 4px #4b007d, inset -3px -4px 8px #e900ff;
+}
+
+#winner {
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #00bcd4;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+#result {
+  text-align: center;
+  font-size: 30px;
+  color: #9a00ff;
+  font-weight: bold;
+}

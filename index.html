@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">  
+  </head>
+  <body>
+   
+    <table id="board">
+      <tr>
+        <td data-row="0" data-col="0"></td>
+        <td class="borU" data-row="0" data-col="1"></td>
+        <td data-row="0" data-col="2"></td>
+      </tr>
+      <tr>
+        <td class="borL" data-row="1" data-col="0"></td>
+        <td data-row="1" data-col="1"></td>
+        <td class="borR" data-row="1" data-col="2"></td>
+      </tr>
+      <tr>
+        <td data-row="2" data-col="0"></td>
+        <td class="borD" data-row="2" data-col="1"></td>
+        <td data-row="2" data-col="2"></td>
+      </tr>
+    </table>
+    
+    <a href="#" id="restart-button">Restart</a>
+    <div id="result"></div>
+   
+    <script type="text/javascript" src="script.js"></script>
+    <script>
+    const cells = document.querySelectorAll("#board td");
+    cells.forEach((cell) => {
+      cell.addEventListener("click", handleClick);
+    });
+    document.getElementById("restart-button").addEventListener("click", restartGame);
+    </script>
+
+</body>
+</html>
+
